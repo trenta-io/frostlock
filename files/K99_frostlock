@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Make your wallpaper blurry
+convert -blur 0x25 ~/.cache/wallpaper/* ~/Pictures/wallpaper-blur.jpg
+sleep 1
+
+# Copy wallpaper in system directory for gdm3 lockscreen 
+cp -f ~/Pictures/wallpaper-blur.jpg /usr/share/backgrounds/
+rm ~/Pictures/wallpaper-blur.
