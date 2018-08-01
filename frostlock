@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd ~/.cache/
+while true
+do
+ls -d wallpaper/* | entr -d convert -blur 0x25 -fill black -colorize 25% ~/.cache/wallpaper/* /usr/share/backgrounds/wallpaper-blur.jpg
+done

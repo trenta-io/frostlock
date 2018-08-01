@@ -1,9 +1,0 @@
-#!/bin/bash
-
-# Take current Wallpaper and apply Gaussian Blur
-convert -blur 0x25 ~/.cache/wallpaper/* ~/Pictures/.cache/wallpaper-blur.jpg
-sleep 1
-
-# Copy wallpaper in system directory for gdm3 lockscreen 
-cp -f ~/Pictures/.cache/wallpaper-blur.jpg /usr/share/backgrounds/
-rm -r ~/Pictures/.cache/
