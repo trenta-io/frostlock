@@ -1,4 +1,7 @@
 #!/bin/bash
+# Created for Trenta.io
+# Frostlock takes your current desktop wallpaper, creates a blurred version which is then set as your GDM lockscreen background. 
+
 
 while true
 do
